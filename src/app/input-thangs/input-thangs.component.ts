@@ -21,17 +21,17 @@ export class InputThangsComponent implements OnInit {
 
   reactToSelection() {
     if (this.mySelection === "bell") {
-      this.message = "You are being irresponsable with your body"
+      this.message = "You are being irresponsable with your body";
     }
     else if (this.mySelection === "ketchup") {
       this.message = "Gross"
     }
     else {
-      this.message = "A fine selection"
+      this.message = "A fine selection";
     }
   }
 
-  createPoduct() {
+  createProduct() {
     console.log("Received user product!")
     console.log(this.theProduct);
   }

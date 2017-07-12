@@ -1,0 +1,16 @@
+<section>
+  <h3> Pipes Component </h3>
+
+  <input type="text" [(ngModel)]="randomText" placeholder="Blah blah">
+
+  <p>
+    Right now it's {{ rightNow | date:"h:mm a on EEEE, MMMM d, y" | lowercase }}.
+  </p>
+
+  <button (click)="addOneHour()"> Add an hour </button>
+
+  <p> {{ currentBitcoinInvestment | currency: "EUR":true }} </p>
+
+  <p> {{ randomText | uppercase }} </p>
+  <p> {{ randomText | lowercase }} </p>
+</section>
