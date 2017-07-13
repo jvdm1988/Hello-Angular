@@ -24,3 +24,7 @@ div {
   font-family: "Comic Sans MS";
   font-style: italic;
 }
+
+select {
+  margin: 20px;
+}
