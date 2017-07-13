@@ -1,0 +1,40 @@
+<section>
+<h3> Directives Example </h3>
+
+<button (click)="buttonA()"> Toggle Size </button>
+<button (click)="buttonB()"> Toggle Color </button>
+<button (click)="buttonC()"> Toggle Font </button>
+
+<!-- "big" is the class name, "isBigSize" is the variable name -->
+<div [ngClass]="{big: isBigSize, colorful: hasColor, comic: isComic}">
+  <p> Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+<select [(ngModel)]="dropdownSelection">
+  <option value=""> Choose Your Pizza Style </option>
+  <option value="nyc"> New York Style </option>
+  <option value="deep"> Deep dish (Chicago?)</option>
+  <option value="this"> Thin Crust </option>
+  <option value="wood"> Wood Oven </option>
+  <option value="chicago"> Chicago Style (Different from Deep Dish) </option>
+</select>
+
+
+<!-- This is similar to the if / else if statement, but in angular syntex -->
+<div [ngSwitch]="dropdownSelection">
+  <div *ngSwitchCase="'nyc'"> <!-- quotes in quotes -->
+    <img src="https://media2.giphy.com/media/RJnwNu6RQTBRK/200.webp#13-grid3">
+  </div>
+
+  <!-- If you did not select deep dish or chicago style -->
+  <div *ngSwitchCase="'deep'"> <!-- quotes in quotes -->
+    <h4> Deep Dish - Chicago Style </h4>
+    <img src="https://media3.giphy.com/media/bguSbMBFt3JHa/200.webp#3-grid1">
+  </div>
+
+  <div *ngSwitchDefault>
+    <h4> Cool, I guess </h4>
+  </div>
+</div>
+</section>

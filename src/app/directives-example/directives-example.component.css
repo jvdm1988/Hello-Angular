@@ -1,0 +1,26 @@
+section {
+  border: 2px solid green;
+  padding: 20px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.big {
+  font-size: 75px;
+  padding: 30px;
+  border-width: 10px;
+}
+
+.colorful {
+  border-color: gold;
+  background-color: darksalmon;
+  color: rebeccapurple;
+  margin: 10px;
+}
+
+.comic {
+  font-family: "Comic Sans MS";
+  font-style: italic;
+}

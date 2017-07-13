@@ -11,6 +11,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CapitalizePipe } from './my-pipes/capitalize.pipe';
 import { EmojifyPipe } from './my-pipes/emojify.pipe';
 import { DoTheSearchPipe } from './my-pipes/do-the-search.pipe';
+import { DirectivesExampleComponent } from './directives-example/directives-example.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DoTheSearchPipe } from './my-pipes/do-the-search.pipe';
     PipesComponent,
     CapitalizePipe,
     EmojifyPipe,
-    DoTheSearchPipe
+    DoTheSearchPipe,
+    DirectivesExampleComponent
   ],
   imports: [
     BrowserModule,
